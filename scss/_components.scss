@@ -1,0 +1,52 @@
+.btn {
+  border: none;
+  text-decoration: none;
+  padding: 1.5rem 5rem;
+  border-radius: 100px;
+  font-weight: bold;
+  font-size: 1.6rem;
+
+  &--secondary {
+    background-color: $color-secondary;
+    color: $color-white;
+  }
+  &--outline {
+    border: 1px solid rgba($color-white, 0.3);
+  }
+  &--primary {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+}
+
+.gradient {
+  z-index: 10;
+  border-radius: 50%;
+  background: linear-gradient(
+    224.72deg,
+    rgba(49, 35, 174, 0.452) -1%,
+    rgba(201, 109, 215, 0.548) 100.5%
+  );
+
+  &--small {
+    right: 20rem;
+    top: 60rem;
+    height: 10rem;
+    width: 10rem;
+  }
+
+  &--big {
+    bottom: -5rem;
+    right: -5rem;
+    position: absolute;
+    height: 40rem;
+    width: 40rem;
+  }
+  &--medium {
+    top: -5rem;
+    right: -5rem;
+    position: absolute;
+    height: 20rem;
+    width: 20rem;
+  }
+}
