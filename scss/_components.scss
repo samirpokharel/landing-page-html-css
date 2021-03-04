@@ -50,3 +50,25 @@
     width: 20rem;
   }
 }
+.card {
+  padding: 3rem;
+  width: 100%;
+  transition: all 0.2s;
+
+  &:hover {
+    box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
+  }
+  &__icon {
+    width: 4.8rem;
+    height: 4.8rem;
+    margin-bottom: 2rem;
+  }
+
+  &__heading {
+    margin-bottom: 2rem;
+  }
+  &__description {
+    font-size: 1.6rem;
+    color: #a4a4a4;
+  }
+}

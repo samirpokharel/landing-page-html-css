@@ -77,15 +77,18 @@
 }
 
 .features {
+  margin-bottom: 3rem;
+  text-align: center;
   background-color: #fdf2ff;
   padding: 6rem 0;
 
   &__heading {
     display: flex;
     flex-wrap: wrap;
+    text-align: start;
   }
   &__main {
-      flex-grow: 2;
+    flex-grow: 2;
   }
   &__description {
     //   flex-grow: 1;
@@ -123,4 +126,25 @@
       object-fit: cover;
     }
   }
+}
+
+.services {
+  text-align: center;
+
+  &__heading {
+    margin-bottom: 3rem;
+  }
+
+  &__content {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+  }
+
+  .services-grid {
+    display: grid;
+    padding-top: 3rem;
+    gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
+  }
+
 }
