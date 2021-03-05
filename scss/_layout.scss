@@ -74,12 +74,15 @@
     width: 100%;
     box-shadow: -30px 30px $color-primary;
   }
+  &--color {
+    background-color: $color-primary-very-light;
+  }
 }
 
 .features {
   margin-bottom: 3rem;
   text-align: center;
-  background-color: #fdf2ff;
+  background-color: $color-primary-very-light;
   padding: 6rem 0;
 
   &__heading {
@@ -116,14 +119,18 @@
     margin-bottom: 5rem;
     display: grid;
     gap: 2rem;
-
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 
-    img {
+    .features__item {
       border-radius: 5px;
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transition: all 0.2s;
+      &:hover {
+        cursor: pointer;
+        transform: translateY(-12px) scale(1.03);
+      }
     }
   }
 }
@@ -146,5 +153,120 @@
     gap: 5rem;
     grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
   }
+}
 
+.users {
+  margin: 5rem 0;
+  background-color: $color-primary-dark;
+  color: $color-white;
+  padding: 7rem 6rem;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+
+  &__heading {
+    margin-bottom: 3rem;
+  }
+  &__description {
+    margin-bottom: 5rem;
+    font-size: 1.6rem;
+    width: 70ch;
+  }
+
+  &__assets {
+    position: relative;
+  }
+
+  &__avatar {
+    position: absolute;
+  }
+  &__avatar-1 {
+    left: 0;
+    top: 0;
+  }
+  &__avatar-2 {
+    right: 0;
+    top: 0;
+  }
+  &__avatar-3 {
+    top: 40%;
+    right: 0;
+  }
+  &__avatar-4 {
+    right: 30%;
+    bottom: 10%;
+  }
+  &__avatar-5 {
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.testimonial {
+  &__heading {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  &__content {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
+  }
+
+  &__card {
+    padding: 3rem;
+    box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
+  }
+
+  .user {
+    &__message {
+      color: #a4a4a4;
+    }
+
+    &__name {
+      font-weight: 600;
+    }
+  }
+}
+.companyes {
+  margin: 10rem 0;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.footer {
+  padding-top: 13.5rem;
+  height: 76rem;
+  background-image: url(../img/fotter-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__contact-us {
+    text-align: center;
+    margin-bottom: 20rem;
+  }
+  .form {
+    margin: 5rem 0;
+    display: inline-block;
+    padding: 1rem;
+    background-color: $color-white;
+    border-radius: 100px;
+    box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
+
+    input {
+      border: 1px solid #dadada;
+      border: none;
+      width: 37rem;
+      padding: 2rem 3.5rem;
+      outline: none;
+      &::placeholder {
+        font-size: 1.6rem;
+        color: #a4a4a4;
+      }
+    }
+  }
+  hr {
+    opacity: 0.4;
+  }
 }

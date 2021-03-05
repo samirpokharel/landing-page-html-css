@@ -18,12 +18,12 @@
         <nav class="navbar">
           <h3 class="logo">RELAP</h3>
           <ul class="navbar__list">
-            <li class="navbar__item">Home</li>
-            <li class="navbar__item">Features</li>
-            <li class="navbar__item">Works</li>
-            <li class="navbar__item">About</li>
-            <li class="navbar__item">People</li>
-            <li class="navbar__item">News</li>
+            <li class="navbar__item"><a href="#">Home</a></li>
+            <li class="navbar__item"><a href="#">Features</a></li>
+            <li class="navbar__item"><a href="#">Works</a></li>
+            <li class="navbar__item"><a href="#">About</a></li>
+            <li class="navbar__item"><a href="#">People</a></li>
+            <li class="navbar__item"><a href="#">News</a></li>
           </ul>
           <div class="gradient gradient--big"></div>
           <a href="#" class="btn btn--outline">Contact Us</a>
@@ -112,9 +112,9 @@
         </ul>
 
         <div class="features__images">
-          <img src="img/img-2.jpg" alt="img 2" />
-          <img src="img/img-1.jpg" alt="img 2" />
-          <img src="img/img-3.png" alt="img 2" />
+          <img class="features__item" src="img/img-2.jpg" alt="img 2" />
+          <img class="features__item" src="img/img-1.jpg" alt="img 2" />
+          <img class="features__item" src="img/img-3.png" alt="img 2" />
         </div>
 
         <a href="#" class="btn btn--primary">All works</a>
@@ -130,7 +130,7 @@
       </p>
 
       <div class="services-grid">
-        <div class="card">
+        <div class="card card--hover-shadow">
           <svg class="card__icon">
             <use xlink:href="./img/sprite.svg#consequuntur"></use>
           </svg>
@@ -162,7 +162,7 @@
         </div>
         <div class="card">
           <svg class="card__icon">
-            <use xlink:href="./img/sprite.svg#aliquid"></use>
+            <use xlink:href="./img/sprite.svg#Bitmap"></use>
           </svg>
           <h4 class="card__heading">Aliquid</h4>
           <p class="card__description">
@@ -192,5 +192,112 @@
         </div>
       </div>
     </section>
+
+    <section class="users grid">
+      <div class="users__assets">
+        <div class="images">
+          <img src="./img/Bitmap.svg" alt="" />
+          <img src=".//img/user-1.png" class="users__avatar users__avatar-1" />
+          <img src=".//img/user-2.png" class="users__avatar users__avatar-2" />
+          <img src=".//img/user-3.png" class="users__avatar users__avatar-3" />
+          <img src=".//img/user-4.png" class="users__avatar users__avatar-4" />
+          <img src=".//img/user-5.png" class="users__avatar users__avatar-5" />
+        </div>
+      </div>
+      <div class="users__content">
+        <h5>Repellendus</h5>
+        <h2 class="users__heading">Temporibus quibusdam</h2>
+        <p class="users__description">
+          Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+          impedit quo minus id quod maxime placeat facere possimus, omnis
+          voluptas assumenda est.
+        </p>
+        <a class="btn btn--secondary" href="#">Our team</a>
+      </div>
+    </section>
+
+    <section class="testimonial container">
+      <div class="testimonial__heading">
+        <h2 class="testimonial__heading">Officis debitis</h2>
+        <p class="testimonial__discription">
+          Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+          voluptatibus <br />
+          maiores alias consequatur aut perferendis doloribus asperiores
+          repella.
+        </p>
+      </div>
+      <div class="testimonial__content">
+        <div class="testimonial__card">
+          <img src="./img/avatar-1.png" alt="" class="user__avatar" />
+          <p class="user__message">
+            "Voluptatem accusantium doloremque laudantium, totam rem aperiam,
+            eaque ipsa quae ab illo inventore veritatis"
+          </p>
+          <p class="user__name">Evelyn Allen</p>
+        </div>
+        <div class="testimonial__card">
+          <img src="./img/avatar-1.png" alt="" class="user__avatar" />
+          <p class="user__message">
+            "Voluptatem accusantium doloremque laudantium, totam rem aperiam,
+            eaque ipsa quae ab illo inventore veritatis"
+          </p>
+          <p class="user__name">Evelyn Allen</p>
+        </div>
+        <div class="testimonial__card">
+          <img src="./img/avatar-1.png" alt="" class="user__avatar" />
+          <p class="user__message">
+            "Voluptatem accusantium doloremque laudantium, totam rem aperiam,
+            eaque ipsa quae ab illo inventore veritatis"
+          </p>
+          <p class="user__name">Evelyn Allen</p>
+        </div>
+      </div>
+
+      <div class="companyes">
+        <img src="./img/company-1.png" class="company" />
+        <img src="./img/company-2.png" class="company" />
+        <img src="./img/company-3.png" class="company" />
+        <img src="./img/company-4.png" class="company" />
+        <img src="./img/company-5.png" class="company" />
+        <img src="./img/company-6.png" class="company" />
+      </div>
+    </section>
+
+    <section class="promo promo--color">
+      <div class="container grid grid-col-2">
+        <div class="promo__content">
+          <h5 class="promo__name">Quis autem</h5>
+          <h2 class="promo__title">
+            Corporis suscipit <br />
+            laboriosam
+          </h2>
+          <div class="disc">
+            <p class="disc__description">
+              Nam libero tempore, cum soluta nobis est eligendi optio cumque
+              nihil impedit quo minus id quod maxime placeat facere possimus,
+              omnis voluptas assumenda est, omnis dolor repellendus.
+            </p>
+          </div>
+        </div>
+        <div class="promo__image">
+          <img src="img/img-4.png" alt="image 1" />
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__contact-us">
+        <h2>Contact Us</h2>
+        <p>
+          Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
+          quam nihil <br />
+          molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas.
+        </p>
+        <form class="form">
+          <input type="text" placeholder="Your email" />
+          <a href="#" class="btn btn--primary">Send</a>
+        </form>
+      </div>
+      <hr />
+    </footer>
   </body>
 </html>
