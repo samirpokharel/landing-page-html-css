@@ -1,3 +1,3 @@
 # Landing page
 
-live link: https://iamsmr.github.io/landing-page-html-css/
+https://samirpokharel.github.io/landing-page-html-css/
